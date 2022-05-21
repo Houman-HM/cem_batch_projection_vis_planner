@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+
+<robot name="bebop">
+  <!-- Main quadrotor link -->
+    <link name="base_link">
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://bebop_gazebo/meshes/bebop_model.stl"/>
+        </geometry>
+        <material name="blue">
+          <color rgba="0 0.4 0.6 1"/>
+        </material>
+      </visual>
+
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://bebop_gazebo/meshes/bebop_model.stl"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <!-- <joint name="base_link_joint" type="fixed">
+      <parent link="base_link"/>
+      <child link="camera_base_link" />
+    </joint> -->
+
+     <gazebo reference="base_link">
+      <material>Gazebo/Black</material>
+    </gazebo>
+</robot>
