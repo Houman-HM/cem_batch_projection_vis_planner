@@ -55,17 +55,16 @@ You can also start teleoperating the target by publishing velocities on ``` /tar
 
 **Algorithm 1:**
 
-| | | | | | | |
-| :----: | :----: | :----:  | :----:  | :----:  | :----:  | :----:  | 
 | **Parameter**  | Occlusion weight | CEM batch size ($n$)| Target tracking weight| Smoothness weight| Velocity bound weight| Acceleration bound weight|
+| :----: | :----: | :----:  | :----:  | :----:  | :----:  | :----:  | 
 | **Value** | 10000| 500 | 100 | 10 | 1 | 1 |
 
 **Algorithm 2:** 
 
-| | | | | | | 
+| **Parameter** | Occlusion weight | CEM batch size ($n$)| projection batch size ($\bar n$)| $\rho$ | Smoohtness weight|
 | :----: | :----: | :----:  | :----:  | :----:  | :----:|
-| **Parameter** | Occlusion weight | CEM batch size ($n$)| projection batch size ($\bar n$)| $\rho$ | Smoohtness weight| 
 | **Value**| 10000 | 500 | 100 | 1 | 10 |
+
 
 ## Running Nageli implmentation using ACADO
 #### Running generated ACADO code
