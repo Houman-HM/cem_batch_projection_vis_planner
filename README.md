@@ -55,17 +55,16 @@ You can also start teleoperating the target by publishing velocities on ``` /tar
 
 **Algorithm 1:**
 
-| **Parameter**  | Occlusion weight | CEM batch size ($n$;)| Target tracking weight| Smoothness weight| Velocity bound weight| Acceleration bound weight|
+| **Parameter**  | Occlusion weight | CEM batch size| Target tracking weight| Smoothness weight| Velocity bound weight| Acceleration bound weight|
 | :----: | :----: | :----:  | :----:  | :----:  | :----:  | :----:  | 
 | **Value** | 10000| 500 | 100 | 10 | 1 | 1 |
 
 **Algorithm 2:** 
 
-| **Parameter** | Occlusion weight | CEM batch size ($n$)| projection batch size ($\bar n$)| &rho; | Smoohtness weight|
+| **Parameter** | Occlusion weight | CEM batch size| projection batch size | &rho; | Smoohtness weight|
 | :----: | :----: | :----:  | :----:  | :----:  | :----:|
 | **Value**| 10000 | 500 | 100 | 1 | 10 |
 
-$$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$
 ## Running Nageli implmentation using ACADO
 #### Running generated ACADO code
 * Edit global variables in ```test.c```: maker position, obstacles initial position and velocity, quadrotor's initial position, weights
