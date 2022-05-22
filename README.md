@@ -5,6 +5,7 @@ The repository is associated with our RAL + IROS 2022 submission Visibility-Awar
 
 * [JAX](https://github.com/google/jax)
 * [bebop_simulator](https://github.com/Houman-HM/bebop_simulator/tree/bebop_hokuyo)
+* [ACADO](https://acado.github.io/index.html) (If you want to run [Nägeli et al](https://ieeexplore.ieee.org/document/7847361) implementation)
 * [odom_visualizer](https://github.com/HKUST-Aerial-Robotics/plan_utils/tree/master/odom_visualization) (If you need the Rviz visualization)
 
 ## Installation procedure
@@ -27,14 +28,14 @@ roslaunch cem_vis_planner 6_wall_world.launch
 This launches a Gazebo environment with 6 walls spawned.
 ### In the second terminal:
 
-#### For Algorithm 2:
+#### For Algorithm 1:
 
 ```
-rosrun cim_vis_planner main_projection.py
-```
-#### For Algorithm 1:
-```
 rosrun cim_vis_planner main_base_line.py
+```
+#### For Algorithm 2:
+```
+rosrun cim_vis_planner main_projection.py
 ```
 
 ### In the third terminal:
@@ -49,6 +50,22 @@ rosbag play 6_wall_target_vel_05.bag // or
 rosbag play 6_wall_target_vel_1.bag
 ```
 You can also start teleoperating the target by publishing velocities on ``` /target/cmd_vel ``` topic. The drone should start following it as you are teleoperating the target.
+
+## Table of hyper parameters used in Algorithm 1 and 2
+
+**Algorithm 1:**
+
+| | | | | | | |
+| :----: | :----: | :----:  | :----:  | :----:  | :----:  | :----:  | 
+| **Parameter**  | Occlusion weight | CEM batch size ($n$)| Target tracking weight| Smoothness weight| Velocity bound weight| Acceleration bound weight|
+| **Value** | 10000| 500 | 100 | 10 | 1 | 1 |
+
+**Algorithm 2:** 
+
+| | | | | | | 
+| :----: | :----: | :----:  | :----:  | :----:  | :----:|
+| **Parameter** | Occlusion weight | CEM batch size ($n$)| projection batch size ($\bar n$)| $\rho$ | Smoohtness weight| 
+| **Value**| 10000 | 500 | 100 | 1 | 10 |
 
 ## Running Nageli implmentation using ACADO
 #### Running generated ACADO code
