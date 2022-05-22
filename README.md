@@ -61,7 +61,7 @@ You can also start teleoperating the target by publishing velocities on ``` /tar
 
 **Algorithm 2:** 
 
-| **Parameter** | Occlusion weight | CEM batch size ($n$)| projection batch size ($\bar n$)| $\rho$ | Smoohtness weight|
+| **Parameter** | Occlusion weight | CEM batch size ($n$)| projection batch size ($\bar n$)| &rho | Smoohtness weight|
 | :----: | :----: | :----:  | :----:  | :----:  | :----:|
 | **Value**| 10000 | 500 | 100 | 1 | 10 |
 
