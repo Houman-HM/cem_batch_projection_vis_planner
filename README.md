@@ -51,7 +51,7 @@ rosbag play 6_wall_target_vel_1.bag
 ```
 You can also start teleoperating the target by publishing velocities on ``` /target/cmd_vel ``` topic. The drone should start following it as you are teleoperating the target.
 
-## Table of hyper parameters used in Algorithm 1 and 2
+## Hyper parameters used in Algorithms 1 and 2
 
 **Algorithm 1:**
 
