@@ -8,6 +8,12 @@ The repository is associated with our RAL + IROS 2022 submission Visibility-Awar
 * [ACADO](https://acado.github.io/index.html) (If you want to run [Nägeli et al](https://ieeexplore.ieee.org/document/7847361) implementation)
 * [odom_visualizer](https://github.com/HKUST-Aerial-Robotics/plan_utils/tree/master/odom_visualization) (If you need the Rviz visualization)
 
+## Demo Video
+
+
+https://user-images.githubusercontent.com/43092392/198872910-48b4aa11-7ac4-416a-b8ab-562504047d3a.mp4
+
+
 ## Installation procedure
 After installing the dependencies, you can build our propsed MPC package as follows:
 ``` 
@@ -72,13 +78,3 @@ You can also start teleoperating the target by publishing velocities on ``` /tar
 * To visualize, run ```python quad_plot.py```
 
 _Look into code_gen.cpp file for acado settings, cost terms, constraints, etc._
-
-## Demo Video
-
-
-https://user-images.githubusercontent.com/43092392/198872910-48b4aa11-7ac4-416a-b8ab-562504047d3a.mp4
-
-
-
-
-
