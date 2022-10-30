@@ -6,7 +6,7 @@ The repository is associated with our RAL + IROS 2022 submission Visibility-Awar
 * [JAX](https://github.com/google/jax)
 * [bebop_simulator](https://github.com/Houman-HM/bebop_simulator/tree/bebop_hokuyo)
 * [ACADO](https://acado.github.io/index.html) (If you want to run [Nägeli et al](https://ieeexplore.ieee.org/document/7847361) implementation)
-* [odom_visualizer](https://github.com/HKUST-Aerial-Robotics/plan_utils/tree/master/odom_visualization) (If you need the Rviz visualization)
+* [odom_visualizer](https://github.com/HKUST-Aerial-Robotics/plan_utils/tree/master/odom_visualization) (If you need the RViz visualization)
 
 ## Demo Video
 
