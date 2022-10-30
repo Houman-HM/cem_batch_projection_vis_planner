@@ -76,7 +76,8 @@ _Look into code_gen.cpp file for acado settings, cost terms, constraints, etc._
 ## Demo Video
 
 
-https://user-images.githubusercontent.com/43092392/198872857-261e75b5-5a58-4259-9d09-d23b23fe9354.mp4
+https://user-images.githubusercontent.com/43092392/198872910-48b4aa11-7ac4-416a-b8ab-562504047d3a.mp4
+
 
 
 
