@@ -37,11 +37,11 @@ This launches a Gazebo environment with 6 walls spawned.
 #### For Algorithm 1:
 
 ```
-rosrun cim_vis_planner main_base_line.py
+rosrun cem_vis_planner main_base_line.py
 ```
 #### For Algorithm 2:
 ```
-rosrun cim_vis_planner main_projection.py
+rosrun cem_vis_planner main_projection.py
 ```
 
 ### In the third terminal:
