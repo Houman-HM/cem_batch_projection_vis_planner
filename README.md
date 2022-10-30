@@ -72,3 +72,12 @@ You can also start teleoperating the target by publishing velocities on ``` /tar
 * To visualize, run ```python quad_plot.py```
 
 _Look into code_gen.cpp file for acado settings, cost terms, constraints, etc._
+
+## Demo Video
+
+
+https://user-images.githubusercontent.com/43092392/198872857-261e75b5-5a58-4259-9d09-d23b23fe9354.mp4
+
+
+
+
