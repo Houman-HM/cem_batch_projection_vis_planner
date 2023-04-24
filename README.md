@@ -8,8 +8,7 @@ The repository is associated with our RAL + IROS 2022 submission Visibility-Awar
 * [odom_visualizer](https://github.com/HKUST-Aerial-Robotics/plan_utils/tree/master/odom_visualization) (If you need the RViz visualization)
 
 ## Demo Video
-
-
+[![Watch the video](https://img.youtube.com/vi/jNCdLur_NaY/maxresdefault.jpg)](https://youtu.be/jNCdLur_NaY)
 ## Installation procedure
 After installing the dependencies, you can build our propsed MPC package as follows:
 ``` 
